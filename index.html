@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Portfolio</title>
+  <style>
+
+  #confetti {
+  background: #90ee90;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px 32px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#confetti:hover {
+  background: #32cd32;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+</style>
+</head>
+<body style="
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  ">
+
+  <!-- Header -->
+  <h1 style="color: #1e3a8a; font-size: 42px;">
+    Clarence Allaine L Abelita
+  </h1>
+
+  <!-- Profile Picture -->
+  <img 
+    src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.6435-1/184337531_102270355378922_3418708752599065642_n.jpg?stp=c0.447.1153.1153a_dst-jpg_tt6&cstp=mx1153x1153&ctp=s200x200&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEL837STYvrCLz02coCUHpY7VIb5qrVB_DtUhvmqtUH8EXQtVmB41rVVq8iERCHTBJyaBT_3nqq-H8-iMEPB2S3&_nc_ohc=4yMreda5Ft4Q7kNvwG8N13d&_nc_oc=AdphlSUDital0b_C19IAxIjpwW4v7gB8osalkhu5_uBcGpdUYPH7pWynktrKLoUrD11oTbGU5g6BxptMsxecTMH7&_nc_zt=24&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=YSJeEtmTSbvK2O4twMkQNw&_nc_ss=7b2a8&oh=00_AQBAfJIOVLEpMdfbODrWP9Cr3UmG3rdv3nNIahBYP0f0AQ&oe=6A743FB8" 
+    alt="Profile Picture"
+    style="
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid red;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+    "
+  />
+
+   <!-- Button -->
+<div class="main-container">
+      <button id="confetti">!!Click for ME!!!</button>
+    </div>
+
+  <!-- Portfolio Description -->
+  <p style="
+      max-width: 600px;
+      margin: 30px auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #374151;
+      background-color: rgba(255,255,255,0.7);
+      padding: 20px;
+      border-radius: 10px;
+    ">
+    Hello! I am Clarence Allaine L Abelita, a passionate web developer who enjoys creating clean and
+    user-friendly websites. I love learning new technologies and improving
+    my design and coding skills.
+  </p>
+
+  <!-- Hobbies List -->
+  <ul style="
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #1f2937;
+      background-color: rgba(255,255,255,0.7);
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 10px;
+    ">
+    <li style="margin: 10px 0;">Reading Novels</li>
+    <li style="margin: 10px 0;">Playing Games</li>
+    <li style="margin: 10px 0;">Cooking</li>
+    <li style="margin: 10px 0;">Painting</li>
+  </ul>
+
+ <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.9.1/tsparticles.confetti.bundle.min.js"></script>
+
+    <script>
+      const confettiBtn = document.querySelector("#confetti");
+
+      confettiBtn.addEventListener("click", () => {
+        confetti({
+          spread: 360,
+          ticks: 200,
+          gravity: 1,
+          decay: 0.94,
+          startVelocity: 30,
+          particleCount: 100,
+          scalar: 3,
+          shapes: ['image'],
+          shapeOptions: {
+            image: [
+              {
+                src: 'https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.6435-1/184337531_102270355378922_3418708752599065642_n.jpg?stp=c0.447.1153.1153a_dst-jpg_tt6&cstp=mx1153x1153&ctp=s200x200&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEL837STYvrCLz02coCUHpY7VIb5qrVB_DtUhvmqtUH8EXQtVmB41rVVq8iERCHTBJyaBT_3nqq-H8-iMEPB2S3&_nc_ohc=4yMreda5Ft4Q7kNvwG8N13d&_nc_oc=AdphlSUDital0b_C19IAxIjpwW4v7gB8osalkhu5_uBcGpdUYPH7pWynktrKLoUrD11oTbGU5g6BxptMsxecTMH7&_nc_zt=24&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=YSJeEtmTSbvK2O4twMkQNw&_nc_ss=7b2a8&oh=00_AQBAfJIOVLEpMdfbODrWP9Cr3UmG3rdv3nNIahBYP0f0AQ&oe=6A743FB8',
+                width: 40,
+                height: 40,
+              },
+              {
+                src: 'https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.6435-1/184337531_102270355378922_3418708752599065642_n.jpg?stp=c0.447.1153.1153a_dst-jpg_tt6&cstp=mx1153x1153&ctp=s200x200&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEL837STYvrCLz02coCUHpY7VIb5qrVB_DtUhvmqtUH8EXQtVmB41rVVq8iERCHTBJyaBT_3nqq-H8-iMEPB2S3&_nc_ohc=4yMreda5Ft4Q7kNvwG8N13d&_nc_oc=AdphlSUDital0b_C19IAxIjpwW4v7gB8osalkhu5_uBcGpdUYPH7pWynktrKLoUrD11oTbGU5g6BxptMsxecTMH7&_nc_zt=24&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=YSJeEtmTSbvK2O4twMkQNw&_nc_ss=7b2a8&oh=00_AQBAfJIOVLEpMdfbODrWP9Cr3UmG3rdv3nNIahBYP0f0AQ&oe=6A743FB8',
+                width: 32,
+                height: 32,
+              },
+              {
+                src: 'https://i.pinimg.com/736x/02/ea/c8/02eac8ec16f6d7f55d2105c966cb05cb.jpg',
+                width: 32,
+                height: 32,
+              },
+            ],
+          },
+        });
+      });
+    </script>
+
+
+</body>
+</html>
